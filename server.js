@@ -5,10 +5,10 @@ const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 
-const { customErrorHandler } = require("./middleware/customErrorHandler");
-const { connectDB } = require("./config/db");
+// const { customErrorHandler } = require("./middleware/customErrorHandler");
+// const { connectDB } = require("./config/db");
 
-connectDB();
+// connectDB();
 
 app.use(cors({ origin: "*" }));
 app.use(express.json());
