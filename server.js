@@ -14,8 +14,8 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api", require("./routes/router"));
-
+// app.use("/api", require("./routes/router"));
+app.get("/", (req, res) => res.send("hello world"));
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static(path.join(__dirname, "../build")));
 //   app.get("/*", (req, res) =>
