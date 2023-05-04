@@ -15,5 +15,5 @@ router.post("/submitOrder", control.submitOrder);
 // router.get("/getOrderedItemsData", verifyToken, control.getOrderedItemsData);
 router.get("/getOrderedItemsData", control.getOrderedItemsData);
 
-router.all("*", control.invalidReq);
+// router.all("*", control.invalidReq);
 module.exports = router;
