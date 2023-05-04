@@ -105,10 +105,18 @@ async function getOrderedItemsData(req, res, next) {
   }
 }
 
+async function invalidReq(req, res) {
+  res.status(200).json({
+    status: "ok",
+    message: "send requests to other end points",
+  });
+}
+
 module.exports = {
   verifyLoginDetails,
   createUser,
   getItemsDetails,
   submitOrder,
   getOrderedItemsData,
+  invalidReq,
 };
